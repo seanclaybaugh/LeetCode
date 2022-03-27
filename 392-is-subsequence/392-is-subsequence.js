@@ -11,8 +11,5 @@ var isSubsequence = function(s, t) {
             stack.shift();
         }
     }
-    if (stack.length === 0) {
-       return true;     
-    }
-    return false;
+    return !stack.length 
 };
