@@ -16,10 +16,8 @@ var mostFrequentEven = function(nums) {
             }
         }
     })
-    console.log(key)
     for (prop in key) {
          if (key[prop] === max && Number(result) > Number(prop)) {
-             console.log(prop, 'prop' , ' val', key[prop], ' max', max)
             result = prop;
         }
         if (key[prop] > max) {
