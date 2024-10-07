@@ -3,15 +3,15 @@
  * @return {number}
  */
 var minLength = function(s) {
-    let string = s.slice(0)
+
     
-    while (string.indexOf('AB') >= 0 || string.indexOf('CD') >= 0) {
-        if (string.indexOf('AB') >= 0) {
-            string = string.replace('AB', '')
+    while (s.indexOf('AB') >= 0 || s.indexOf('CD') >= 0) {
+        if (s.indexOf('AB') >= 0) {
+            s = s.replace('AB', '')
         }
-        if (string.indexOf('CD') >= 0) {
-            string = string.replace('CD', '')
+        if (s.indexOf('CD') >= 0) {
+            s = s.replace('CD', '')
         }
     }
-    return string.length;
+    return s.length;
 };
